@@ -316,7 +316,7 @@ class ProcessTableToEIA(object):
 
     def execute(self, parameters, messages):
         try:
-            self.loadInputTable()
+            self.loadInputTable(parameters)
             self.loadEIADefinitions()
             self.summarizeEIA()
 
